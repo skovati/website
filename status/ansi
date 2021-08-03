@@ -30,8 +30,13 @@ echo "${GRE}
 Network--------------------------------
 ${NC}"
 vnstat -i eno1
-vnstat -i lab
+echo "
+"
 vnstat -i wg0
+
+echo "
+"
+docker exec -it qbittorrent curl ifconfig.io
 
 echo "${BLU}
 CPU/Mem--------------------------------
@@ -54,8 +59,12 @@ echo "
 "
 df -h --local -x tmpfs -x devtmpfs
 
+echo "
+"
 zpool status tank
 
+echo "
+"
 zfs list
 
 echo "${CYA}
