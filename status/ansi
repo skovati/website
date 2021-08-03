@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 RED='\033[1;31m'
 GRE='\033[0;32m'
@@ -30,6 +30,8 @@ echo -e "${GRE}
 Network--------------------------------
 ${NC}"
 vnstat -i eno1
+vnstat -i lab
+vnstat -i wg0
 
 echo -e "${BLU}
 CPU/Mem--------------------------------
@@ -52,6 +54,10 @@ echo "
 "
 df -h --local -x tmpfs -x devtmpfs
 
+zpool status tank
+
+zfs list
+
 echo -e "${CYA}
 Docker---------------------------------
 ${NC}"
@@ -68,7 +74,6 @@ ssh nas vnstat -i eno1
 
 echo "
 "
-ssh nas vnstat -i wg0
 
 echo -e "${BLU}
 Cpu/Mem--------------------------------
