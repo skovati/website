@@ -36,7 +36,7 @@ vnstat -i wg0
 
 echo "
 "
-docker exec -it qbittorrent curl ifconfig.io
+docker exec -it qbit curl ifconfig.io
 
 echo "${BLU}
 CPU/Mem--------------------------------
