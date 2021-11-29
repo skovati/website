@@ -120,7 +120,7 @@
 <p>Or you could delete the entire paragraph with <code>dap</code> (delete around paragraph).</p>
 <h3 id="code-example">Code Example</h3>
 <p>These ideas extend extremely well to source code. Consider the following example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
 
@@ -129,13 +129,13 @@
     <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">greeting</span>)
 }
 </code></pre></div><p>Here, say we wanted to change the value of the greeting variable. Of course, we could take a hand off the keyboard, move it over to the mouse, move the cursor to the desired spot on the screen, click and drag to select the desired text, and then finally hit backspace and start typing our new greeting&hellip; or, we could do it the Vim way, by simple hitting <code>ci&quot;</code> (change inside double quotes) which will delete everything inside the quotes, and place us in insert mode ready to type.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">greeting</span> <span style="color:#66d9ef">string</span> = <span style="color:#e6db74">&#34;█&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">greeting</span> <span style="color:#66d9ef">string</span> = <span style="color:#e6db74">&#34;█&#34;</span>
 </code></pre></div><p>Or, we could change the entire function body by typing <code>cip</code> (change inside paragraph), leaving us in insert mode with the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span> {<span style="color:#960050;background-color:#1e0010">█</span>}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span> {<span style="color:#960050;background-color:#1e0010">█</span>}
 </code></pre></div><p>And finally, say we had a really annoying function call that we wanted to change out. Something like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#960050;background-color:#1e0010">█</span><span style="color:#a6e22e">MyReallyLong_Annoyingly_NamedFunction</span>(<span style="color:#a6e22e">SomeotherInnerFunction</span>(<span style="color:#a6e22e">greeting</span>)).<span style="color:#a6e22e">Print</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#960050;background-color:#1e0010">█</span><span style="color:#a6e22e">MyReallyLong_Annoyingly_NamedFunction</span>(<span style="color:#a6e22e">SomeotherInnerFunction</span>(<span style="color:#a6e22e">greeting</span>)).<span style="color:#a6e22e">Print</span>()
 </code></pre></div><p>And we want to change this entire function up until the .Print() call. No real combination of text objects or movements could delete this strangely worded function call. Is this finally a situation where the good &lsquo;ol click and drag to select and delete wins over Vim? Of course not, we can use <code>ct.</code>, which will Change To the next instance of a &ldquo;.&rdquo;, leaving us in insert mode with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#960050;background-color:#1e0010">█</span>.<span style="color:#a6e22e">Print</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#960050;background-color:#1e0010">█</span>.<span style="color:#a6e22e">Print</span>()
 </code></pre></div><h3 id="numerical-repetition">Numerical repetition</h3>
 <p>These commands can also take a numeric prefix, which represents the amount of time the command should run. A classic example is <code>dd</code>, which deletes the current line of text. By prefixing this with a number (say 5 <code>5dd</code>), Vim will delete the next 5 lines of text. Or <code>3cw</code> will delete the next 3 words, and place you in insert mode to replace them. Essentially, this repetition allows you to work on many sections of text that don&rsquo;t precisely correspond to a Vim keybind, which offers a lot of power.</p>
 <p>In my opinion, these are really powerful movements, especially when editing source code. I find myself using <code>ci&quot;</code> to change strings or <code>}</code> to jump between functions extremely often. And, like stated before, these command compositions work with any command and object/movement, so once you get the hang of targeting specific objects or movements, you can apply any of the commands we&rsquo;ve learned so far to them, like delete, change, or copy.</p>
@@ -168,15 +168,15 @@
 		<div>
 			<ul>
 				
+				<li><a href="../../blog/neovim/">Neovim, why I switched</a></li>
+				
+				<li><a href="../../blog/whyunix/">Why Unix?</a></li>
+				
 				<li><a href="../../blog/wiki/">A minimal Vim, Markdown, and GPG powered wiki</a></li>
 				
 				<li><a href="../../blog/whyvim/">Vim: The World&#39;s Greatest Text Editor</a></li>
 				
 				<li><a href="../../blog/privacy/">Privacy &amp; Security in the Modern Digital Age</a></li>
-				
-				<li><a href="../../blog/linux/intro/ch6/">Intro to Linux - Chapter 6</a></li>
-				
-				<li><a href="../../blog/linux/intro/ch5/">Intro to Linux - Chapter 5</a></li>
 				
 			</ul>
 		</div>
