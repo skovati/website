@@ -1,7 +1,7 @@
 ---
 title: "Neovim, why I switched"
 date: 2021-11-16T11:13:54-06:00
-draft: true
+draft: false
 tags:
   - vim
   - unix

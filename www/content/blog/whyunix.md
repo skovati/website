@@ -1,7 +1,7 @@
 ---
 title: "Why Unix?"
 date: 2021-12-05T10:09:54-05:00
-draft: true
+draft: false
 tags:
   - unix
   - linux
