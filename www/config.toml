@@ -30,9 +30,9 @@ relativeURLS=true
         weight = 2 
 
   [[menu.main]]
-        identifier = "recipies"
-        name = "recipies"
-        url = "/recipies/"
+        identifier = "recipes"
+        name = "recipes"
+        url = "/recipes/"
         weight = 3
 
 # Footer

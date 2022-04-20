@@ -22,27 +22,27 @@
 &lt;h2 id=&#34;markdown&#34;&gt;Markdown&lt;/h2&gt;
 &lt;p&gt;Markdown has become my go-to markup language for notes and lists. It offers the essential features of a simple markup language, while staying easy to use with its syntax. I often make use of the checkboxes and tables to keep track of lists and information, which are nice additions alongside the basics of making text &lt;strong&gt;bold&lt;/strong&gt; or &lt;em&gt;italicized&lt;/em&gt; and organizing sections and lists. Plus, since it&amp;rsquo;s just plain text, unlike a Microsoft Word document, I can edit it in vim (with the help of &lt;a href=&#34;https://github.com/plasticboy/vim-markdown&#34;&gt;vim-markdown&lt;/a&gt;), interact with it via unix command line tools,&lt;/p&gt;
 &lt;p&gt;An example markdown wiki&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## to-do
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;- [ ]&lt;/span&gt; wash the dishes
-&lt;span style=&#34;color:#66d9ef&#34;&gt;- [ ]&lt;/span&gt; take out the trash
-&lt;span style=&#34;color:#66d9ef&#34;&gt;- [X]&lt;/span&gt; study
-
-&lt;span style=&#34;color:#75715e&#34;&gt;## projects
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### games
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;pong&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/pong.md&lt;/span&gt;)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;space invaders&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/invaders.md&lt;/span&gt;)
-
-&lt;span style=&#34;color:#75715e&#34;&gt;### other
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;garden&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/garden.md&lt;/span&gt;)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;blog&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/blog.md&lt;/span&gt;)
-
-&lt;span style=&#34;color:#75715e&#34;&gt;## university classes
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Algorithms
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Number Theory
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Electrodynamics
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Metaphysics
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Statistics
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;vim&#34;&gt;Vim&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## to-do
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;- [ ]&lt;/span&gt; wash the dishes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;- [ ]&lt;/span&gt; take out the trash
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;- [X]&lt;/span&gt; study
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## projects
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### games
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;pong&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/pong.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;space invaders&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/invaders.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### other
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;garden&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/garden.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; [&lt;span style=&#34;color:#f92672&#34;&gt;blog&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;./projects/blog.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## university classes
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Algorithms
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Number Theory
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Electrodynamics
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Metaphysics
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Statistics
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;vim&#34;&gt;Vim&lt;/h2&gt;
 &lt;h2 id=&#34;gpg&#34;&gt;GPG&lt;/h2&gt;
 &lt;h2 id=&#34;posix-shell&#34;&gt;POSIX shell&lt;/h2&gt;
 </description> 
