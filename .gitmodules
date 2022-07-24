@@ -1,6 +1,3 @@
-[submodule "blog/smol"]
-	path = blog/smol
-	url = https://github.com/colorchestra/smol
-[submodule "www/themes/smol"]
-	path = www/themes/smol
+[submodule "themes/smol"]
+	path = themes/smol
 	url = git@github.com:skovati/smol

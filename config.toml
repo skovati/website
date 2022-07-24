@@ -1,0 +1,40 @@
+baseURL = "https://skovati.dev/"
+languageCode = "en-us"
+title = "skovati"
+theme = "smol"
+relativeURLS=true
+
+# Parameters
+[params]
+    subtitle = "a digital minimalist."
+    dateFmt = "2006-01-02 15:04"
+
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "articles"
+        name = "articles"
+        url = "/articles/"
+        weight = 2
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "tags"
+        url = "/tags/"
+        weight = 3
+
+# Footer
+  [[menu.footer]]
+        name = "github"
+        url = "https://github.com/skovati"
+        weight = 1
+
+    [[menu.footer]]
+        name = "email"
+        url = "mailto:skovati@protonmail.com"
+        weight = 2
+
+    [[menu.footer]]
+        name = "pgp"
+        url = "https://skovati.dev/pgp"
+        weight = 3
