@@ -9,7 +9,7 @@ tags:
   - FOSS
 ---
 
-This post is meant to be inspiration to those considering using a unix-like system (I'm mainly referring to a Linux distro or one of the BSDs) similar to my [Why Vim?](../blog/whyvim.md) post.
+This post is meant to be inspiration to those considering using a unix-like system (I'm mainly referring to a Linux distro or one of the BSDs) similar to my [Why Vim?](/articles/whyvim.md) post.
 
 The first set of blog posts I made on this website were about the history of unix/linux, and how to get started experimenting with these systems. However, I got carried away and turned this into a multi part saga, so this post will attempt to condense these thoughts into a standalone post about why *you* should use this flavor of operating system.
 

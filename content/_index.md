@@ -17,4 +17,4 @@ lately I've been working on small projects like
 
 professionally, I write modeling and simulation software for a space science research and development lab
 
-encrypt a message with my [pgp key](/gpg) and [email me](mailto:mail@skovati.dev)
+encrypt a message with my [pgp key](/pgp) and [email me](mailto:mail@skovati.dev)

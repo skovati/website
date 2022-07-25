@@ -2,7 +2,7 @@ baseURL = "https://skovati.dev/"
 languageCode = "en-us"
 title = "skovati"
 theme = "smol"
-relativeURLS=true
+relativeURLS = true
 
 # Parameters
 [params]

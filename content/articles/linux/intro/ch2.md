@@ -38,4 +38,4 @@ I would be remissed if I didn't mention Linux's cousins, the BSDs. I'll keep thi
 
 Finally, the preamble is over, and we can get into the meat of using Linux.
 
-[Chapter 3 - Linux Terminology - Distros, Package Managers, and More.](/blog/linux/intro/ch3)
+[Chapter 3 - Linux Terminology - Distros, Package Managers, and More.](/articles/linux/intro/ch3)
