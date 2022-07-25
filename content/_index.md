@@ -1,3 +1,7 @@
+---
+title: "welcome to skovati.dev!"
+---
+
 I'm a computer engineer and amateur mathematician from the midwest region of the states
 
 a few things I'm passionate about:
