@@ -1,5 +1,5 @@
 ---
-title: "welcome to skovati.dev!"
+title: "hi, I'm skovati"
 ---
 
 I'm a computer engineer and amateur mathematician from the midwest region of the states
