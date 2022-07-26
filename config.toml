@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "skovati"
 theme = "smol"
 relativeURLS = true
+enableGitInfo = true
 
 # Parameters
 [params]

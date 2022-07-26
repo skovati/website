@@ -1,6 +1,6 @@
 [submodule "themes/smol"]
 	path = themes/smol
-	url = https://github.com/skovati/smol
+	url = git@github.com:skovati/smol
 [submodule "startpage"]
 	path = startpage
-	url = https://github.com/skovati/startpage
+	url = git@github.com:skovati/startpage
