@@ -4,11 +4,6 @@ on:
   push:
     branches: ["master"]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -19,6 +14,8 @@ defaults:
 
 jobs:
   build:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.102.3
@@ -44,6 +41,9 @@ jobs:
           path: ./public
 
   package:
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -60,7 +60,9 @@ jobs:
         with:
           name: public
           path: ./public
-      - name: build
-        run: docker build -t ghcr.io/${{ github.actor }}/website .
-      - name: push image
-        run: docker push ghcr.io/${{ github.actor }}/website:latest
+      - name: Build and push image
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
