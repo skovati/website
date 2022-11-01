@@ -1,0 +1,16 @@
+{{ define "main" }}
+	<main>
+        <header class="homepage-header">
+            <h1>{{.Title}}</h1>
+        </header>
+        <div class="homepage-content">
+            {{.Content}}
+        </div>
+
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ range $paginator.Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}
