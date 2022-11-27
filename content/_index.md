@@ -13,6 +13,7 @@ a few things i'm passionate about:
 - cryptography and cybersecurity
 - electronics and circuits
 - privacy and anonymity
+- astronomy and space science
 
 check out my [articles](/articles) below (or from [rss](/articles/index.xml))
 
