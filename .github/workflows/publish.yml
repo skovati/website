@@ -69,10 +69,12 @@ jobs:
       - name: set up docker buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: get unix timestamp
-        id: timestamp
+      - name: generate image tag
+        id: tag
         run: |
-          echo "timestamp=$(date +%s)" >> $GITHUB_OUTPUT
+          sha="${GITHUB_SHA::6}"
+          unix="$(date +%s)"
+          echo "tag=$sha-$unix" >> $GITHUB_OUTPUT
 
       - name: build and push image
         uses: docker/build-push-action@v3
@@ -81,5 +83,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ghcr.io/${{ github.repository }}:${{ steps.timestamp.outputs.timestamp }}
+            ghcr.io/${{ github.repository }}:${{ steps.tag.outputs.tag }}
             ghcr.io/${{ github.repository }}:latest
