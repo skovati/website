@@ -72,7 +72,7 @@ jobs:
       - name: get unix timestamp
         id: timestamp
         run: |
-          echo "{timestamp}={'$(date +%s)'}" >> $GITHUB_OUTPUT
+          echo "timestamp=$(date +%s)" >> $GITHUB_OUTPUT
 
       - name: build and push image
         uses: docker/build-push-action@v3
