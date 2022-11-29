@@ -72,7 +72,7 @@ jobs:
       - name: generate image tag
         id: tag
         run: |
-          sha="${GITHUB_SHA::6}"
+          sha="${GITHUB_SHA::7}"
           unix="$(date +%s)"
           echo "tag=$sha-$unix" >> $GITHUB_OUTPUT
 
