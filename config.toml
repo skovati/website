@@ -32,7 +32,7 @@ enableGitInfo = true
 
     [[menu.footer]]
         name = "email"
-        url = "mailto:skovati@protonmail.com"
+        url = "mailto:mail@skovati.dev"
         weight = 2
 
     [[menu.footer]]
