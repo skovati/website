@@ -12,30 +12,35 @@ enableGitInfo = true
 
 # Header
 [menu]
-  [[menu.main]]
+    [[menu.main]]
         identifier = "articles"
         name = "articles"
         url = "/articles/"
         weight = 2
 
-  [[menu.main]]
+    [[menu.main]]
         identifier = "tags"
         name = "tags"
         url = "/tags/"
         weight = 3
 
 # Footer
-  [[menu.footer]]
-        name = "github"
-        url = "https://github.com/skovati"
-        weight = 1
+    [[menu.footer]]
+        name = "content license"
+        url = "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt"
+        weight = 2
+
+    [[menu.footer]]
+        name = "source code"
+        url = "https://github.com/skovati/website"
+        weight = 3
 
     [[menu.footer]]
         name = "email"
         url = "mailto:mail@skovati.dev"
-        weight = 2
+        weight = 4
 
     [[menu.footer]]
         name = "pgp"
         url = "https://skovati.dev/pgp"
-        weight = 3
+        weight = 5
