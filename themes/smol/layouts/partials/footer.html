@@ -1,7 +1,7 @@
 <footer>
     <p>
     {{ with .GitInfo }}
-    last updated: {{ .AuthorDate.Format "2006-01-02" }} by {{ .AuthorName }} - ({{ .AbbreviatedHash }}) "{{ .Subject }}"
+    page last updated: {{ .AuthorDate.Format "2006-01-02" }} by {{ .AuthorName }} - ({{ .AbbreviatedHash }}) "{{ .Subject }}"
     {{ end }}
     </p>
     <p>

@@ -10,26 +10,27 @@ html {
     --precolor: #b9c9b9;
 }
 
-body{
+body {
     max-width:800px;
     margin:40px auto;
     padding:0 10px;
     font:15px/1.5 monospace;
+    font-family: monospace;
     color:var(--fontcolor);
     background: var(--bgcolor);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--linkcolor);
 }
 
 
-h1,h2,h3{
+h1,h2,h3 {
     line-height:1.2
 }
 
-p > code{
+p > code {
     color: var(--precolor);
     background: var(--prebgcolor);
     padding-left:5px;
@@ -38,7 +39,7 @@ p > code{
     border-radius: 2px;
 }
 
-pre{
+pre {
     color: var(--precolor);
     background: var(--prebgcolor);
     padding:24px;
@@ -46,8 +47,8 @@ pre{
     border: 2px solid var(--linkcolor);
 }
 
-article{
-    padding:24px 0
+article {
+    padding:4px 0
 }
 
 .center {
