@@ -9,6 +9,6 @@ tasks:
     cd website
     hugo
 - package: |
-    tar -C public -cvz . > ../site.tar.gz
+    tar -C public -czvf site.tgz .
 - upload: |
-    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
+    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tgz
