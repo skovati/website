@@ -2,14 +2,14 @@ image: alpine/latest
 packages:
   - hugo
   - hut
+  - git
 oauth: pages.sr.ht/PAGES:RW
 environment:
   site: skovati.srht.site
 tasks:
 - build: |
-    cd website
-    hugo
+    hugo -s website
 - package: |
     tar -C website/public -czvf $site.tgz .
-- upload: |
+- publish: |
     hut pages publish -d $site $site.tgz
