@@ -1,6 +1,7 @@
 image: alpine/latest
 packages:
   - hugo
+  - hut
 oauth: pages.sr.ht/PAGES:RW
 environment:
   site: skovati.srht.site
@@ -9,6 +10,6 @@ tasks:
     cd website
     hugo
 - package: |
-    tar -C public -czvf site.tgz .
+    tar -C website/public -czvf $site.tgz .
 - upload: |
-    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tgz
+    hut pages publish -d $site $site.tgz
