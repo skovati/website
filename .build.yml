@@ -1,0 +1,14 @@
+image: alpine/latest
+packages:
+  - hugo
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: skovati.srht.site
+tasks:
+- build: |
+    cd website
+    hugo
+- package: |
+    tar -C public -cvz . > ../site.tar.gz
+- upload: |
+    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
