@@ -26,21 +26,16 @@ enableGitInfo = true
 
 # Footer
     [[menu.footer]]
-        name = "content license"
-        url = "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt"
+        name = "git"
+        url = "https://github.com/skovati"
         weight = 2
-
-    [[menu.footer]]
-        name = "source code"
-        url = "https://github.com/skovati/website"
-        weight = 3
 
     [[menu.footer]]
         name = "email"
         url = "mailto:mail@skovati.dev"
-        weight = 4
+        weight = 3
 
     [[menu.footer]]
         name = "pgp"
         url = "https://skovati.dev/pgp"
-        weight = 5
+        weight = 4

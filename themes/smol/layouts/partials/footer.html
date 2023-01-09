@@ -1,11 +1,16 @@
 <footer>
-	{{- range .Site.Menus.footer }}
-	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
-        {{- end }}
-	</p>
     <p>
     {{ with .GitInfo }}
     last updated: {{ .AuthorDate.Format "2006-01-02" }} by {{ .AuthorName }} - ({{ .AbbreviatedHash }}) "{{ .Subject }}"
     {{ end }}
     </p>
+    <p>
+    the content for this site is <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt"><b>CC-BY-NC-ND</b></a>. the <a href="https://github.com/skovati/website"><b>source code</b></a> is <a href="https://github.com/skovati/website/blob/master/LICENSE"><b>MIT</b></a>
+    </p>
+
+    <p>
+	{{- range .Site.Menus.footer }}
+	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>
+        {{- end }}
+	</p>
 </footer>
