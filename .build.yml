@@ -5,7 +5,7 @@ packages:
   - git
 oauth: pages.sr.ht/PAGES:RW
 environment:
-  site: skovati.srht.site
+  site: skovati.dev
 tasks:
 - build: |
     hugo -s website
