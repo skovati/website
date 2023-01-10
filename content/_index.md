@@ -14,13 +14,9 @@ a few things i'm passionate about:
 - mathematics and philosophy
 - astronomy and space science
 
-check out my [articles](/articles) below (or from [rss](/articles/index.xml))
-
-lately i've been working on small projects like
-- [symposium](https://github.com/skovati/symposium), a refreshingly simple text chat application
-- [lab](https://github.com/lab-xyz/lab), a terraform and kubernetes managed home/cloud lab for self hosting services
-
 professionally, i write modeling and simulation software for a space science R&D lab
+
+check out my latest [articles](/articles) below (or from [rss](/articles/index.xml))
 
 encrypt a message with my [pgp key](/pgp) and [email me](mailto:mail@skovati.dev)
 

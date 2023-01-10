@@ -6,7 +6,7 @@
         <div class="homepage-content">
             {{.Content}}
         </div>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 4 }}
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 3 }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
