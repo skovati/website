@@ -4,7 +4,7 @@ title = "skovati"
 theme = "smol"
 relativeURLS = true
 enableGitInfo = true
-paginate = 4
+paginate = 20
 
 # Parameters
 [params]
