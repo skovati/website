@@ -5,6 +5,8 @@ theme = "smol"
 relativeURLS = true
 enableGitInfo = true
 paginate = 20
+disableHugoGeneratorInject = true
+minify = true
 
 # Parameters
 [params]

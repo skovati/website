@@ -42,13 +42,13 @@ I'll walk through the steps to set up this VM on Google Cloud:
 
 First, either sign in with your existing account, or make a new account [here](https://console.cloud.google.com/). Make a new project at the top, called something memorable like "Linux VM" and select it. Then, on the left side, select Compute Engine. Select your project, add your payment information (you won't be billed anything though), and the hit create VM. Under machine configuration, choose generation N1, and under Machine type, choose f1-micro. GCP gives everyone 744 free hours of f1-micro usage per month, which is exactly 24 hours a day * 31 days in a month—so this VM is indefinitely free for you to use. You also get $300 free credit towards other GCP services if you want more horsepower. Next, under Boot Disk, I recommend choosing either Ubuntu Server or Debian 10. Ubuntu Server is going to be easier for newcomers, while Debian has less configured out of the box. Then, hit create and wait a few seconds. Soon your could VM will be up and running. 
 
-![](/vm.png)
+![](/vm.webp)
 
 Go back to your VM instances page, and you should see your new server. There are a handful of ways to connect to this server: SSH through the GCP interface, using the gcloud command line tool, or SSHing manually through a program of your choice. I recommend learning how to access it from a ssh client, but you should use the GCP ssh interface at least once to see what your username is on the VM. Both Linux and Windows have an SSH client built into the terminal and PowerShell respectively. If you're familiar with SSH, generate a key pair and continue reading, if not, skip ahead to the first part of [Chapter 5](/linux/intro/ch5) where I talk about what SSH is and why you should use SSH keys.
 
 Once you have an ssh key pair generated, you'll have to add your public key to the GCP VMs whitelist. This is done by clicking on your VM in the VM instance list, and hitting edit on the top bar. Scroll down to the SSH key section, hit view and edit, and paste your ssh public key in here. Now, you should be able to access your VM by typing `ssh your-google-username@the-vms-ip-listed-on-the-instances-page` and boom! Remote secure shell access. Once you have this working, move onto the other parts of [Chapter 5](/linux/intro/ch5) where I talk about other server configuration.
 
-![](/ssh.png)
+![](/ssh.webp)
 
 ---
 
