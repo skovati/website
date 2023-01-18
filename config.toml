@@ -8,6 +8,12 @@ paginate = 20
 disableHugoGeneratorInject = true
 minify = true
 
+# allow potentially unsafe HTML inlining
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
 # Parameters
 [params]
     subtitle = "a digital minimalist."
