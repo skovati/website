@@ -20,4 +20,4 @@ check out my latest [articles](/articles) below (or from [rss](/articles/index.x
 
 encrypt a message with my [pgp key](/pgp) and [email me](mailto:mail@skovati.dev)
 
-powered by open source software: [hugo](https://gohugo.io/), [nginx](https://nginx.org/en/), [k3s](https://k3s.io/), [debian](https://www.debian.org/)
+powered by open source software: [hugo](https://gohugo.io/), [nginx](https://nginx.org/en/), [alpine linux](https://www.alpinelinux.org/), [sr.ht pages](https://srht.site)
