@@ -36,7 +36,7 @@ Bash is more than just a command line interpreter however, it's actually a full 
     pandoc $1 -f markdown -t html >> ./index.html
     echo "</article>" >> ./index.html
 
-Each of those lines *could* just be pasted into a regular bash prompt, and it would work the same, but the script saves you a lot of time. The first line there just tells the bash interpreter to run the script. Then I copy my template html file to the current chapter folder, convert the chapters markdown to html and add it to the end of the template html file, and finally add that closing article tag. Now, I can just run `convert ch6.md` and it'll output a correctly formatted html file for my server to host. 
+Each of those lines *could* just be pasted into a regular bash prompt, and it would work the same, but the script saves you a lot of time. The first line there just tells the bash interpreter to run the script. Then I copy my template html file to the current chapter folder, convert the chapter's markdown to html and add it to the end of the template html file, and finally add that closing article tag. Now, I can just run `convert ch6.md` and it'll output a correctly formatted html file for my server to host.
 
 Bash scripting should (and probably will be) its own chapter, but I want to show off a few *really* cool things it can do. First, you should be familiar with standard input and output. Stdin is essentially a stream of text that can be sent to a program, and stdout is a stream of text that a program can output. On Unix-based systems, we can use these in combination with the Unix Philosophy of each program doing one thing and doing it well, to chain together programs. Here's an example.
 
