@@ -7,12 +7,15 @@ enableGitInfo = true
 paginate = 20
 disableHugoGeneratorInject = true
 minify = true
+summaryLength = 40
 
-# allow potentially unsafe HTML inlining
 [markup]
     [markup.goldmark]
+        # allow potentially unsafe HTML inlining
         [markup.goldmark.renderer]
             unsafe = true
+    [markup.highlight]
+        style = "gruvbox"
 
 # Parameters
 [params]

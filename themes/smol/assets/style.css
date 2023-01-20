@@ -2,12 +2,20 @@ html {
     overflow-y: scroll
 }
 
-:root {
-    --bgcolor: #080c07;
-    --fontcolor: #B9C9B8;
-    --linkcolor: #638660;
-    --prebgcolor: #182417;
-    --precolor: #b9c9b9;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bgcolor: #080c07;
+        --fgcolor: #B9C9B8;
+        --accent: #638660;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bgcolor: #e7efb7;
+        --fgcolor: #0c3203;
+        --accent: #3b7739;
+    }
 }
 
 body {
@@ -16,23 +24,21 @@ body {
     padding:0 10px;
     font:15px/1.5 monospace;
     font-family: monospace;
-    color:var(--fontcolor);
+    color:var(--fgcolor);
     background: var(--bgcolor);
+    line-height: 1.6
 }
 
 a {
     text-decoration: none;
-    color: var(--linkcolor);
+    color: var(--accent);
 }
 
-
-h1,h2,h3 {
+h1, h2, h3 {
     line-height:1.2
 }
 
 p > code {
-    color: var(--precolor);
-    background: var(--prebgcolor);
     padding-left:5px;
     padding-right:5px;
     padding-bottom:1px;
@@ -40,15 +46,13 @@ p > code {
 }
 
 pre {
-    color: var(--precolor);
-    background: var(--prebgcolor);
     padding:24px;
     overflow-x: auto;
-    border: 2px solid var(--linkcolor);
+    border: 2px solid var(--accent);
 }
 
 article {
-    padding:4px 0
+    padding:6px 0
 }
 
 .center {
