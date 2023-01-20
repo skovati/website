@@ -9,6 +9,7 @@ environment:
 tasks:
 - build: |
     hugo -s website
+    du -h website/public
 - package: |
     tar -C website/public -czvf $site.tgz .
 - publish: |
