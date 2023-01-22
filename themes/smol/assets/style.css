@@ -4,7 +4,8 @@ html {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --hue: 115;
+        /* hue is set by hue.js once per session
+        --hue: 115; */
         --dark_primary: hsl(var(--hue) 20% 5%);
         --dark_secondary: hsl(var(--hue) 20% 10%);
         --light_primary: hsl(var(--hue) 20% 75%);
