@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }}</title>
-    <script src="/hue.js"></script>
+    <script>
+        let hue = sessionStorage.getItem("hue");
+        if (!hue) {
+            hue = Math.floor(Math.random() * 360);
+            sessionStorage.setItem("hue", hue)
+        }
+        document.querySelector(":root")
+            .style.setProperty("--hue", (parseInt(hue) + 1) % 360);
+    </script>
     <link rel="icon" href="data:,">
     {{ $css := resources.Get "style.css" | minify }}
     <link rel="stylesheet" href="{{ $css.Permalink }}">
