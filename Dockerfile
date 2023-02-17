@@ -1,3 +1,4 @@
-from docker.io/nginx:alpine
+from docker.io/nginx:alpine-slim
 
-copy public /usr/share/nginx/html
+copy public /var/www/skovati.dev
+copy nginx.conf /etc/nginx
