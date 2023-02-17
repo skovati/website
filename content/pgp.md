@@ -4,7 +4,7 @@ date: "2022-07-24"
 ---
 ```
 Key Id: 0x5026E406B7B3818F
-Encrypt and email at skovati@protonmail.com.
+Encrypt and email at mail@skovati.dev
 Include your public key if you want my response encrypted.
 See https://skovati.dev/pub.gpg for a scriptable format.
 ```
