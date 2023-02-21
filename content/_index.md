@@ -2,7 +2,7 @@
 title: "hi, i'm skovati"
 ---
 
-i'm a computer engineer and amateur mathematician from the great lakes region
+i'm a computer engineer and amateur mathematician from the great lakes
 
 a few things i'm passionate about:
 - digital minimalism
