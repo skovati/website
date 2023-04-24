@@ -2,33 +2,20 @@ html {
     overflow-y: scroll;
 }
 
-/* @media (prefers-color-scheme: dark) { */
-    :root {
-        /* hue is set by hue.js once per session */
-        --hue: 115;
-        --dark_primary: hsl(var(--hue) 20% 5%);
-        --dark_secondary: hsl(var(--hue) 20% 10%);
-        --light_primary: hsl(var(--hue) 20% 75%);
-        --accent: hsl(var(--hue) 20% 45%);
-    }
-/* } */
-
-/* @media (prefers-color-scheme: light) { */
-/*     :root { */
-/*         --hue: 100; */
-/*         --dark_primary: hsl(var(--hue) 20% 85%); */
-/*         --dark_secondary: hsl(var(--hue) 20% 75%); */
-/*         --light_primary: hsl(var(--hue) 20% 10%); */
-/*         --accent: hsl(var(--hue) 80% 20%); */
-/*     } */
-/* } */
+:root {
+    /* hue is set by hue.js once per session */
+    --hue: 115;
+    --dark_primary: hsl(var(--hue) 20% 5%);
+    --dark_secondary: hsl(var(--hue) 20% 10%);
+    --light_primary: hsl(var(--hue) 20% 75%);
+    --accent: hsl(var(--hue) 20% 45%);
+}
 
 body {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 10px;
+    max-width: 50em;
+    margin: 2em auto;
+    padding: 0 1em;
     font: 15px/1.5 monospace;
-    font-family: monospace;
     color: var(--light_primary);
     background: var(--dark_primary);
     line-height: 1.6;
@@ -37,10 +24,10 @@ body {
 blockquote {
     background: var(--dark_secondary);
     border-left: 10px solid var(--accent);
-    width: 60%;
+    width: 70%;
     display: block;
-    margin: 40px auto;
-    padding: 1rem;
+    margin: 2em auto;
+    padding: 1em;
     font-size: 1.2em;
     font-family: "Georgia", serif;
     font-style: italic;
@@ -51,44 +38,25 @@ a {
     color: var(--accent);
 }
 
-h1, h2, h3 {
-    line-height: 1.2;
-}
-
-p > code {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    border-radius: 2px;
-}
-
 pre {
-    padding: 24px;
-    overflow-x: auto;
-    border: 2px solid var(--accent);
+    padding: 1.5em;
+    overflow-x: scroll;
+    border: 3px solid var(--accent);
 }
 
 article {
     padding: 1em 0;
 }
 
-.center {
+img, .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
-
-img {
-    display: block;
     max-width: 100%;
-    height: auto;
-    margin: auto;
 }
 
 figcaption {
-    color: #888;
-    font: 12px/1.5 monospace;
     text-align: center;
 }
 
