@@ -5,7 +5,7 @@ packages:
   - git
 oauth: pages.sr.ht/PAGES:RW
 environment:
-  site: skovati.dev
+  site: skovati
 tasks:
 - build: |
     cd website
@@ -15,4 +15,4 @@ tasks:
 - package: |
     tar -C website/dist -czvf $site.tgz .
 - publish: |
-    hut pages publish -d $site $site.tgz
+    hut pages publish -d $site.srht.site $site.tgz
