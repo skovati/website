@@ -1,6 +1,6 @@
 image: alpine/latest
 packages:
-  - hugo
+  - npm
   - hut
   - git
 oauth: pages.sr.ht/PAGES:RW
@@ -8,9 +8,11 @@ environment:
   site: skovati.dev
 tasks:
 - build: |
-    hugo -s website
-    du -hs website/public
+    cd website
+    npm install
+    npm run build
+    du -hs dist
 - package: |
-    tar -C website/public -czvf $site.tgz .
+    tar -C website/dist -czvf $site.tgz .
 - publish: |
     hut pages publish -d $site $site.tgz
