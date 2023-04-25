@@ -1,4 +1,4 @@
-name: "build hugo site, publish image"
+name: "build site, publish image"
 
 on:
   push:
@@ -13,35 +13,7 @@ defaults:
     shell: bash
 
 jobs:
-  build:
-    permissions:
-      contents: read
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.110.0
-    steps:
-      - name: install hugo
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
-      - name: checkout
-        uses: actions/checkout@v3
-
-      - name: build with hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo --minify
-
-      - name: store artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: public
-          path: ./public
-
-  package:
+  publish:
     permissions:
       contents: read
       packages: write
@@ -57,12 +29,6 @@ jobs:
 
       - name: checkout
         uses: actions/checkout@v3
-
-      - name: load artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: public
-          path: ./public
 
       - name: set up docker buildx
         uses: docker/setup-buildx-action@v2
