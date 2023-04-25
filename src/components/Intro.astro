@@ -1,0 +1,6 @@
+---
+const intro = (await Astro.glob("../pages/intro.md")).pop();
+const Content = intro.Content;
+---
+
+<Content />

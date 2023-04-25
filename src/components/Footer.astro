@@ -1,0 +1,19 @@
+---
+const links = [
+  {name: "git", url: "https://github.com/skovati"},
+  {name: "mail", url: "mailto:mail@skovati.dev"},
+  {name: "pgp", url: "/pgp"}
+]
+---
+
+<p>
+the content for this site is <a href="./LICENSE"><b>CC-BY-NC-ND</b></a>. the <a href="https://git.sr.ht/~skovati/website"><b>source code</b></a> is <a href="https://git.sr.ht/~skovati/website/tree/master/item/LICENSE"><b>MIT</b></a>
+</p>
+
+<p>
+{
+  links.map(e =>
+    <a href={e.url}><b>{e.name} </b></a>
+  )
+}
+</p>

@@ -1,0 +1,51 @@
+:root {
+  /* hue is set by hue.js once per session */
+  --hue: 115;
+  --dark_primary: hsl(var(--hue) 20% 5%);
+  --dark_secondary: hsl(var(--hue) 20% 10%);
+  --light_primary: hsl(var(--hue) 20% 75%);
+  --accent: hsl(var(--hue) 20% 45%);
+}
+
+html {
+  overflow-y: scroll;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  max-width: 50em;
+  margin: 2em auto;
+  padding: 1rem;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--light_primary);
+  background: var(--dark_primary);
+}
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+pre {
+  padding: 1.5em;
+  overflow-x: scroll;
+  border: 3px solid var(--accent);
+  font-size:
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0.3em 0em;
+}
+
+.header-art {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  font-size: min(1vw, 16px);
+  overflow-x: none;
+}

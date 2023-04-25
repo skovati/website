@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const postCollection = await getCollection("posts");
+
+const posts = postCollection
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+      .filter(e => !e.data.draft)
+      .slice(0, 3)
+---
+
+<h2>latest posts</h2>
+<ul>
+{posts.map(post =>
+  <li>
+    <h2 style="margin:0">
+      <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+    </h2>
+    <h4 style="margin:0">
+      <FormattedDate date={post.data.date} />
+    {
+      post.data.tags.map(t =>
+        <a href={`/tags/${t}`}>{t} </a>
+      )
+    }
+    </h4>
+    <p>{post.data.desc}</p>
+  </li>
+  )}
+</ul>
