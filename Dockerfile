@@ -4,7 +4,7 @@ workdir /build
 
 copy src ./src
 copy public ./public
-copy tsconfig.json package.json astro.config.mjs .
+copy tsconfig.json package.json astro.config.ts .
 
 run npm install
 
