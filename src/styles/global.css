@@ -21,7 +21,7 @@ body {
   color: var(--light_primary);
   background: var(--dark_primary);
 }
-a {
+a, hr {
   text-decoration: none;
   color: var(--accent);
 }
@@ -47,6 +47,6 @@ h1, h2, h3, h4, h5 {
   user-select: none;
   display: flex;
   justify-content: center;
-  font-size: min(1.8vw, 15px);
+  font-size: min(1.8vw, 12px);
   overflow: hidden;
 }
