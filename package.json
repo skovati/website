@@ -12,7 +12,8 @@
   "dependencies": {
     "@astrojs/rss": "^2.4.0",
     "astro": "^2.3.0",
-    "astro-compress": "^1.1.42"
+    "astro-compress": "^1.1.42",
+    "astro-compressor": "^0.4.0"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
