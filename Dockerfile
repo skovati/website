@@ -10,7 +10,7 @@ run npm install
 
 run npm run build
 
-from docker.io/nginx:alpine-slim
+from docker.io/fholzer/nginx-brotli:latest
 
 copy --from=build /build/dist /var/www/skovati.dev
 copy nginx.conf /etc/nginx
