@@ -18,6 +18,6 @@ a few things i'm passionate about:
 
 professionally, i make computers go beep boop at a space science laboratory
 
-check out my latest [blog posts](/posts) below or email me an encrypted message
+check out my latest [blog posts](/posts) ([rss](/rss.xml)) below or email me an encrypted message
 
-powered by free and open source software ([astro](https://astro.build/), [nginx](https://nginx.org/), [k3s](https://k3s.io/)) and self-hosted <3
+powered by free and open source software ([astro](https://astro.build), [debian](https://www.debian.org), [k3s](https://k3s.io), [nginx](https://nginx.org)) and self-hosted <3
