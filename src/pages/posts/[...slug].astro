@@ -21,7 +21,7 @@ const { Content } = await entry.render();
     <FormattedDate date={entry.data.date}/>
     {
       entry.data.tags.map(t =>
-        <a href={"/tags/"+t}>{t} </a>
+        <a href={"/tags/"+t}> {` ${t} `}</a>
       )
     }
     {entry.data.author && `- ${entry.data.author}`}

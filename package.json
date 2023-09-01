@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.4.0",
-    "astro": "^2.3.0",
-    "astro-compress": "^1.1.42",
+    "@astrojs/rss": "^3.0.0",
+    "astro": "^3.0.5",
+    "astro-compress": "^2.0.14",
     "astro-compressor": "^0.4.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.4"
+    "typescript": "^5.2.2"
   }
 }

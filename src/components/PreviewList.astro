@@ -21,7 +21,7 @@ const posts = postCollection
       <FormattedDate date={post.data.date} />
     {
       post.data.tags.map(t =>
-        <a href={`/tags/${t}`}>{t} </a>
+        <a href={`/tags/${t}`}>{` ${t} `} </a>
       )
     }
     </h4>
