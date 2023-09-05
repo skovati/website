@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
-    "astro": "^3.0.5",
-    "astro-compress": "^2.0.14",
+    "astro": "^3.0.8",
+    "astro-compress": "^2.0.15",
     "astro-compressor": "^0.4.0"
   },
   "devDependencies": {
