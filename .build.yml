@@ -1,6 +1,6 @@
 image: alpine/latest
 packages:
-  - npm
+  - pnpm
   - hut
   - git
 oauth: pages.sr.ht/PAGES:RW
@@ -9,10 +9,10 @@ environment:
 tasks:
 - build: |
     cd website
-    npm install
-    npm run build
+    pnpm install
+    pnpm run build
     du -hs dist
 - package: |
     tar -C website/dist -czvf $site.tgz .
 - publish: |
-    hut pages publish -d $site.srht.site $site.tgz
+    hut pages publish -d $site.dev $site.tgz
