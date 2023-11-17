@@ -2,7 +2,7 @@
 const subtitle = "a digital minimalist.";
 ---
 <a href="/">
-<pre class="header-art">
+<pre>
  ______     __  __     ______     __    __  ______     ______    __
 /\  ___\   /\ \/ /    /\  __ \   /\ \  / / /\  __ \   /\__  _\  /\ \
 \ \___  \  \ \  _'-.  \ \ \/\ \  \ \ \/ /  \ \  __ \  \/_/\ \/  \ \ \
@@ -16,5 +16,16 @@ const subtitle = "a digital minimalist.";
 
 <div>
   <a href="/posts"><b>posts </b></a>
+  <a href="/pics"><b>pics </b></a>
   <a href="/tags"><b>tags</b></a>
 </div>
+
+<style>
+pre {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  font-size: min(1.8vw, 12px);
+  overflow: hidden;
+}
+</style>

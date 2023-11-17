@@ -1,7 +1,3 @@
----
-draft: true
----
-
 ## hi, i'm skovati
 
 i'm a computer engineer and amatuer mathematician from the great lakes
